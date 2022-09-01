@@ -1,0 +1,3 @@
+nslookup -type=A tryhackme.com
+nslookup -type=MX tryhackme.com 1.1.1.1
+nslookup -type=TXT tryhackme.com

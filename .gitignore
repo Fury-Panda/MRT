@@ -1,0 +1,7 @@
+# Private Files
+*.ovpn
+
+
+# Files over 100mb
+# Command to list all the grater than 100MB and then write tham to .gitignore: "find * -size +100M -type f -print >> .gitignore"
+

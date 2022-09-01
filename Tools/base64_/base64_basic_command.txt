@@ -1,0 +1,2 @@
+To encode --> echo 'cryptographyisuseful' | base64
+To decode --> echo 'dGhlIHNlY3JldCB3b3JkIGlzIDogd2F0ZXJtZWxvbg==' | base64 -d

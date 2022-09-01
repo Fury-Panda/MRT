@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Tools" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662017700" ts_lastsave="1662017754">
+    <node name="Forensic" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662017754" ts_lastsave="1662017867">
+      <rich_text weight="heavy">1. PkCrack</rich_text>
+      <rich_text> - Breaking PkZip-encryption
+   ◇ The attack is a known </rich_text>
+      <rich_text family="monospace">plaintext attack</rich_text>
+      <rich_text>, which means you have to know part of the encrypted data in order to break the cipher.
+   ◇ </rich_text>
+      <rich_text link="webs https://github.com/keyunluo/pkcrack">https://github.com/keyunluo/pkcrack</rich_text>
+    </node>
+  </node>
+</cherrytree>

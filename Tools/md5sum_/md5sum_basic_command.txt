@@ -1,0 +1,1 @@
+echo -n 'hashes are cool' | md5sum

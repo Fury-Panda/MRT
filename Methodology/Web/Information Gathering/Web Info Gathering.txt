@@ -1,0 +1,24 @@
+First task for web pentesting is information gathering. Below are some resource for gathering primary information for websites.
+
+IP Address:
+Tool: ping
+
+Domain Name Info: 
+Web:
+https://whois.domaintools.com
+
+Technologies Used:
+Web:
+https://www.netcraft.com
+
+Other Websites On The Same Server: 
+Web:
+https://dnslytics.com/reverse-ip
+https://www.bing.com --> [Search ip]
+
+DNS Records: 
+Web:
+https://www.robtex.com
+
+Unlisted Files, Subdomains And Derectories:
+
