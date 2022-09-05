@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Hacking Methodology" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662140330" ts_lastsave="1662141362">
+    <node name="Information Gathering" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662140371" ts_lastsave="1662140371"/>
+    <node name="Enamuration" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662140385" ts_lastsave="1662140385"/>
+    <node name="Exploitation" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662140415" ts_lastsave="1662147009">
+      <node name="SQLi" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1662147009" ts_lastsave="1662149511">
+        <rich_text weight="heavy">SQLi</rich_text>
+        <rich_text>
+SQL injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. It generally allows an attacker to view data that they are not normally able to retrieve.
+
+</rich_text>
+        <rich_text weight="heavy">Type:</rich_text>
+        <rich_text>
+	1. In-band SQLi (Classic)
+	2. Inferential SQLi (Blind)
+	3. Out-of-band SQLi 
+	
+</rich_text>
+        <rich_text weight="heavy">• In-band SQLi (Classic)</rich_text>
+        <rich_text>
+The attacker uses the same channel of communication to launch their attacks and to gather their results.
+Example:
+</rich_text>
+        <rich_text weight="heavy">   ◇ Retriving Hidden Data
+   ◇ Subnerting Application Logic
+   ◇ Retriving Data From Another Database Tables (Union Attack)</rich_text>
+        <rich_text>
+   		 When an application is vulnerable to SQL injection and the results of the query are returned within the application's responses, the UNION keyword can be used to retrieve data from other tables within the database. This results in an SQL injection UNION attack.  The UNION keyword lets you execute one or more additional SELECT queries and append the results to the original query. 
+   		For example, </rich_text>
+        <rich_text family="monospace">SELECT a, b FROM table1 UNION SELECT c, d FROM table2</rich_text>
+        <rich_text>
+   		For a UNION attack to work 2 requirements must be met:
+               1. Individual queries must return same number of columns.
+               2. The data type of each column must be compatible between the individual queries.
+               </rich_text>
+      </node>
+    </node>
+    <node name="Privilage Escalation" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662140432" ts_lastsave="1662140437"/>
+    <node name="Post Expoitation" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662140502" ts_lastsave="1662140502"/>
+  </node>
+</cherrytree>
