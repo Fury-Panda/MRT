@@ -2,53 +2,46 @@
 <cherrytree>
   <bookmarks list=""/>
   <node name="Tools" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662017700" ts_lastsave="1681250939">
-    <node name="Forensic" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662017754" ts_lastsave="1681251271">
-      <rich_text weight="heavy">1. PkCrack:</rich_text>
-      <rich_text>  Breaking PkZip-encryption
-            → The attack is a known </rich_text>
+    <node name="Forensic" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662017754" ts_lastsave="1662017867">
+      <rich_text weight="heavy">1. PkCrack</rich_text>
+      <rich_text> - Breaking PkZip-encryption
+   ◇ The attack is a known </rich_text>
       <rich_text family="monospace">plaintext attack</rich_text>
       <rich_text>, which means you have to know part of the encrypted data in order to break the cipher.
-            → </rich_text>
+   ◇ </rich_text>
       <rich_text link="webs https://github.com/keyunluo/pkcrack">https://github.com/keyunluo/pkcrack</rich_text>
     </node>
-    <node name="Reconnaissance" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1663676037" ts_lastsave="1681251242">
+    <node name="Reconnaissance" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1663676037" ts_lastsave="1681251138">
       <rich_text weight="heavy">1. whois</rich_text>
       <rich_text>: Able to know various register information of the domain.
             → The WHOIS server replies  with various information related to the domain requested.
-           
 </rich_text>
       <rich_text weight="heavy">2. nslookup:</rich_text>
       <rich_text>  For DNS information.
             → Able to know ipv4, ipv6, canonical name, mail server, start of authority, text record.
-            
 </rich_text>
       <rich_text weight="heavy">3. dig:</rich_text>
       <rich_text> Like nslookup, but for advance dns queries.
-
 </rich_text>
       <rich_text weight="heavy">4. DNSDumpster:</rich_text>
       <rich_text> It is an online DNS lookup tool. 
             → It is more powerful then nslookup and dig in term of finding subdomain.
-           
 </rich_text>
       <rich_text weight="heavy">5. Shadon.io:</rich_text>
       <rich_text> Able to achive various pieces of information about the client's network, without actively connecting to it.  
             → Shodan.io tries to connect to every device reachable online to build a search engine of connected “things” in contrast with a search engine for web pages. Once it gets a response, it collects all the information related to the service and saves it in the database to make it searchable.
-            
 </rich_text>
       <rich_text weight="heavy">6. Browser:</rich_text>
       <rich_text> Able to interact with the server of the terget machine.
             → Developer Tools of browser lets you inspect many things that your browser has received and exchanged with the remote server. For instance, you can view and even modify the JavaScript (JS) files, inspect the cookies set on your system and discover the folder structure of the site content.Some plugin may come to handy in many situation.
-            
-</rich_text>
-      <rich_text weight="heavy">7. ping:</rich_text>
+8. </rich_text>
+      <rich_text weight="heavy">ping:</rich_text>
       <rich_text> </rich_text>
     </node>
-    <node name="Exploitation" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1681247654" ts_lastsave="1681251282">
+    <node name="Exploitation" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1681247654" ts_lastsave="1681251085">
       <rich_text weight="heavy">1. Weevely:</rich_text>
       <rich_text> A web shell designed for post-exploitation and post-exploitation purposes .
-            → Upload  weevely  PHP  agent  to  a  target web server to get remote shell access to it.  
-            → Once connected you can make use of the more than 30 modules to assist administrative tasks, maintain access, provide situational awareness, elevate privileges, and spread into the target network.</rich_text>
+      ▪ Upload  weevely  PHP  agent  to  a  target web server to get remote shell access to it.  Once connected you can make use of the more than 30 modules to assist administrative tasks, maintain access, provide situational awareness, elevate privileges, and spread into the target network.</rich_text>
     </node>
     <node name="Post Exploitation" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1681250939" ts_lastsave="1681250939"/>
   </node>

@@ -2,13 +2,13 @@
 <cherrytree>
   <bookmarks list=""/>
   <node name="Tools" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662017700" ts_lastsave="1681250939">
-    <node name="Forensic" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662017754" ts_lastsave="1681251271">
+    <node name="Forensic" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1662017754" ts_lastsave="1681251259">
       <rich_text weight="heavy">1. PkCrack:</rich_text>
       <rich_text>  Breaking PkZip-encryption
-            → The attack is a known </rich_text>
+   ◇ The attack is a known </rich_text>
       <rich_text family="monospace">plaintext attack</rich_text>
       <rich_text>, which means you have to know part of the encrypted data in order to break the cipher.
-            → </rich_text>
+   ◇ </rich_text>
       <rich_text link="webs https://github.com/keyunluo/pkcrack">https://github.com/keyunluo/pkcrack</rich_text>
     </node>
     <node name="Reconnaissance" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1663676037" ts_lastsave="1681251242">
@@ -44,11 +44,10 @@
       <rich_text weight="heavy">7. ping:</rich_text>
       <rich_text> </rich_text>
     </node>
-    <node name="Exploitation" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1681247654" ts_lastsave="1681251282">
+    <node name="Exploitation" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1681247654" ts_lastsave="1681251085">
       <rich_text weight="heavy">1. Weevely:</rich_text>
       <rich_text> A web shell designed for post-exploitation and post-exploitation purposes .
-            → Upload  weevely  PHP  agent  to  a  target web server to get remote shell access to it.  
-            → Once connected you can make use of the more than 30 modules to assist administrative tasks, maintain access, provide situational awareness, elevate privileges, and spread into the target network.</rich_text>
+      ▪ Upload  weevely  PHP  agent  to  a  target web server to get remote shell access to it.  Once connected you can make use of the more than 30 modules to assist administrative tasks, maintain access, provide situational awareness, elevate privileges, and spread into the target network.</rich_text>
     </node>
     <node name="Post Exploitation" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1681250939" ts_lastsave="1681250939"/>
   </node>
